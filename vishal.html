@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background-color: #1f242d;
+        }
+         /*text*/
+        .conainer .text{
+    position: absolute;
+    color: #0ef;
+    font-size: 33px;
+    font-weight: 600;
+    overflow: hidden;
+    }
+    .conainer .text.first-text{
+        color: white;
+      padding-right: 50px;
+    }
+    .text.sec-text:before{
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+       
+        height: 100%;
+        width: 100%;
+        background-color: #1f242d;
+        border-left: 2px solid #0ef;
+        animation: animate 3s steps(12) infinite;
+    }
+    @keyframes animate{
+        40%, 60%{
+            left: 100%;
+        }
+        100%{
+            left: 0%;
+        }
+    }
+    .conainer h3{
+        font-size: 30px;
+        color: white;
+         margin-right: -40px;
+    }
+    .conainer h4{
+        font-size: 30px;
+        color: black; 
+    }
+    .conainer .text{
+        margin-left: 20px;
+    } 
+    /*container stsrt*/
+    .container{
+       
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .image img{
+        position: relative;
+        margin-right: 60px;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        border: 3px solid #0ef;
+        box-shadow:0 0 2rem #0ef;
+    }
+    .container .text h1{
+        font-size: 60px;
+        color: white;
+        margin-bottom: -30px;
+       
+    }
+    .container .text h4{
+        font-size: 30px;
+        color: white;
+    }
+    /*socilemedia*/
+    .social-media i{
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 35px;
+    padding: 2px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    color: #0ef;
+    margin-left: -5px;
+    background-color:#1f242d;
+  text-align: center;
+  transition: 0.3s ease;
+  border: 2px solid #0ef;
+  background: transparent;
+  cursor: pointer;
+}
+.social-media i:hover{
+background-color:#0ef;
+box-shadow:  0 0 1rem #0ef;
+color: #1f242d;
+}
+.social-media p{
+    margin-top: 6px;
+    font-size: 20px;
+    color: white;
+
+}
+.container button{
+    margin-top: 4px;
+    height:43px;
+    width: 150px;
+    font-size: 18px;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: #0ef;
+    border: 2px solid #0ef;
+    transition: 0.3s ease;
+}
+.container button:hover{
+background-color:#0ef;
+box-shadow:  0 0 1rem #0ef;
+color: #1f242d;
+}
+@media (max-width:480px){
+.container{
+   text-align: center;
+    display: grid;
+    grid-template-columns: minmax(1,1fr);
+}
+.container .image img{
+    height: 250px;
+    width: 250px; 
+    margin-left: 40px;
+}
+.social-media p{
+    font-size: 14px;
+}
+.social-media i{
+    font-size: 30px; 
+
+    height: 35px;
+    width: 35px;
+    margin-top: 70px; 
+}
+.container .text h1{
+    font-size: 50px;
+}
+.conainer  h4{
+    margin-right: 250px;
+    font-size: 25px;
+   margin-top: 40px;
+}
+.conainer .text{
+    font-size: 25px;
+    font-weight: 600;
+    overflow: hidden;
+    }
+    .container .text h4{
+        font-size: 25px;
+        color: white;
+    }
+}
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="image">
+            <img src="vishal1.jpg" alt="">
+        </div>
+        <div class="text">
+            <h1>It's Vishal</h1>
+            
+        
+         <div class="social-media">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-twitter'></i>
+           <i class='bx bxl-instagram-alt'></i></a>
+         <i class='bx bxl-linkedin' ></i>
+         <p>Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum  <br>has been the industry's standard dummy text ever</p> 
+            </div>
+            <button>message</button>
+    </div>
+  <script>
+   /* const text = document.querySelector('.sec-text');
+    const textload = () => {
+        setTimeout(() => {
+            text.textContent = "only";
+        }, 0);
+        setTimeout(() => {
+            text.textContent = "freelancer";
+        }, 3200);
+        setTimeout(() => {
+            text.textContent = "business";
+        }, 5800);
+    }
+    textload();
+    setInterval(textload, 12000);*/
+
+  </script>
+</body>
+</html>
